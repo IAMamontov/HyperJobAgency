@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+    {% for item in content %}
+        <div>{{ item.author }}: {{ item.description }}</div>
+    {% endfor %}
+    <form method="post">{% csrf_token %}
+        <button type="submit">Add new</button>
+    </form>
+    <br>
+    <form method="post" action="logout">{% csrf_token %}
+        <button type="submit">Logout</button>
+    </form>
+</body>
+</html>

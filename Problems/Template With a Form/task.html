@@ -1,0 +1,14 @@
+<b>Template With a Form</b> <a class=right href="https://hyperskill.org/learn/step/7644">Open on JetBrains Academy</a>
+<br><br>
+<html>
+ <head></head>
+ <body>
+  <p>We have a model <code class="language-python">Drink</code> with fields <em>brand, taste</em>:</p> 
+  <pre><code class="language-python">class Drink(models.Model):
+    brand = models.CharField(max_length=32)
+    taste = models.CharField(max_length=32)</code></pre> 
+  <p>We pass an instance of the model to a template in context dictionary: <code class="language-python">{'drink': ...}</code>.</p> 
+  <p>Add the <em>id</em> of a drink to the value of an "<em>input</em>" element and a CSRF token at the beginning of the form.</p>
+ </body>
+</html><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 15 seconds</font><br><br>
+<a href="https://hyperskill.org/learn/step/7637">Show topic summary</a>

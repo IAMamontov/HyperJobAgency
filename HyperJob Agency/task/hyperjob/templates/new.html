@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create new {{ content_type }}</title>
+</head>
+<body>
+    <form method="post">{% csrf_token %}
+        <p>Write your {{ content_type }}:</p>
+        <input type="text" name="description">
+        <button type="submit">Send</button>
+    </form>
+</body>
+</html>
